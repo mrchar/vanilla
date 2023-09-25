@@ -33,3 +33,17 @@ degit mrchar/vanilla#1234abcd  # commit hash
 ```
 
 先确定你要使用的节点，然后将`#`后面的标记替换为你选择的 branch 或 tag。
+
+## 节点
+
+下面列出的是引入新特征的节点，后面的节点包含前面的节点的所有特征：
+
+| Tag          | Comment                       |
+| ------------ | ----------------------------- |
+| core         | 纯净的Vite+Vue+Typescript项目 |
+| consistent   | 使用工具约束代码样式          |
+| tailwindcss  | 使用TailwindCSS开发           |
+| axios        | 使用Axios请求网络             |
+| vue-router   | 使用VueRouter切换页面         |
+| pinia        | 使用Pinia管理状态             |
+| element-plus | 使用ElementPlus组件库         |
