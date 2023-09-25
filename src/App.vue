@@ -1,8 +1,20 @@
 <template>
-  <h1>Hello App!</h1>
-  <p>
-    <router-link to="/">Go to Home</router-link>
-    <router-link to="/about">Go to About</router-link>
-  </p>
-  <router-view></router-view>
+  <el-menu
+    :default-active="activeIndex"
+    router
+    mode="horizontal"
+    :ellipsis="false"
+  >
+    <el-menu-item index="">LOGO</el-menu-item>
+    <div class="flex-1"></div>
+    <el-menu-item index="/">Home</el-menu-item>
+    <el-menu-item index="/about">About</el-menu-item>
+  </el-menu>
+  <router-view />
 </template>
+
+<script setup lang="ts">
+import { ref } from "vue"
+
+const activeIndex = ref("/")
+</script>
